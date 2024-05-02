@@ -1,0 +1,21 @@
+#Built-in Class Attributes
+class student:
+
+    ''' This is Student Class Created on 01.05.2024 at 6:15pm'''
+
+    def __init__(self,rno,name,age):
+        self.rno = rno
+        self.name = name
+        self.age = age
+
+    def dispaly(self):
+        print("roll no:",self.rno)
+        print("name:", self.name)
+        print("age:", self.age)
+
+obj1std = student(100,"krishna",22)
+
+print(obj1std.__doc__)
+print(obj1std.__dict__)
+print(student.__name__)
+print(obj1std.__module__)
